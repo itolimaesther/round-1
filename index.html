@@ -468,18 +468,18 @@ body {
 }
 
 .my-form {
-  margin: 20px 0px 20px 0px;
+    margin: 70px 0px 35px 0px;
 }
 
 .my-form .form-group {
   margin: 25px 0px 25px 0px;
 }
 
-/* .my-form input, .show-pw {
+.my-form input, .show-pw {
   height: 42px;
-} */
+}
 .modal-body {
-    padding: 15px 53px;
+    padding: 36px 53px;
 }
 
 /* .show-pw {
@@ -536,7 +536,15 @@ h2.headline span {
   color: #fff;
   background-color: #49639F;
 }
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: none;
+}
 
+input[type=checkbox] {
+    height: auto;
+}
 /* .btn {
   font-weight: bold;
   font-size: 1.5rem;
@@ -784,8 +792,9 @@ h2.headline span {
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-body">
-                <span class="text-right close" data-dismiss="modal">x</span>
-                <h1>Sign Up</h1>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
                 <form class="my-form">
                   <div class="form-group">
                     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
@@ -804,8 +813,10 @@ h2.headline span {
 
                   <label class="terms-name"><input type="checkbox" name="terms"> I agree in all statement of <a class="terms-link" href="#">terms of service</a>.</label>
               </div>
-              <button type="submit" class="btn btn-submit">Signup</button>
-              <button type="submit" class="btn btn-submit">Register</button>              </form>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-submit">Signup</button>
+                <button type="button" class="btn btn-submit">Register</button>              </form>
+            </div>
               <!-- <p class="text-center">already a member? <a href="#">Sign in</a></p> -->
             </div>
           </div>
